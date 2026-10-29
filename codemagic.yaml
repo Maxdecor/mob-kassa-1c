@@ -20,6 +20,19 @@ workflows:
         script: |
           cd app
           dart run flutter_launcher_icons
+      - name: Android SDK platformasini oldindan o'rnatish (qayta urinish bilan)
+        script: |
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/share/android-sdk}"
+          rm -rf "$SDK/platforms/android-36" "$SDK/.temp" || true
+          SM="$SDK/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SM" ] || SM="$(command -v sdkmanager)"
+          yes | "$SM" --licenses > /dev/null || true
+          for i in 1 2 3 4; do
+            "$SM" "platforms;android-36" && break
+            echo "Urinish $i muvaffaqiyatsiz, qayta urinamiz..."
+            rm -rf "$SDK/platforms/android-36" "$SDK/.temp" || true
+            sleep 10
+          done
       - name: APK yig'ish
         script: |
           cd app
