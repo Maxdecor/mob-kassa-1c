@@ -2,7 +2,7 @@ workflows:
   android-apk:
     name: Mobil kassa APK
     max_build_duration: 40
-    instance_type: linux_x2
+    instance_type: mac_mini_m2
     environment:
       flutter: stable
       java: 17
@@ -10,8 +10,8 @@ workflows:
       - name: Gradle xotirasini oshirish
         script: |
           cd app
-          sed -i 's/-Xmx1g/-Xmx3g/' android/gradle.properties
-          sed -i 's/^org.gradle.daemon=false/org.gradle.daemon=true/' android/gradle.properties
+          sed -i '' 's/-Xmx1g/-Xmx3g/' android/gradle.properties
+          sed -i '' 's/^org.gradle.daemon=false/org.gradle.daemon=true/' android/gradle.properties
       - name: Paketlar
         script: |
           cd app
