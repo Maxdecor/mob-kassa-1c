@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.22">
+	<ConfigVersions>
+		<Metadata name="Configuration.MobilKassa" id="31054d80-9043-4c06-adca-014b3c02aab5" configVersion="9fcfc399dd0e0492bfe9e1b0ab380e2697a6625e"/>
+		<Metadata name="Language.Русский" id="ca074906-7f27-4a48-8f87-3a4f1ab236a2" configVersion="429c04e96fe9c4ebf6555f550defd65be8545cba"/>
+		<Metadata name="Role.Расш1_ОсновнаяРоль" id="4c0239e8-c727-4f82-8018-de502fcc004d" configVersion="f6ab2006d5bc6b3f24232c2b9da3feb30ccceded"/>
+		<Metadata name="Role.Расш1_ОсновнаяРоль.Rights" id="4c0239e8-c727-4f82-8018-de502fcc004d.0" configVersion="69cc5f33bbd2063de5cd31aed9ead5b201a3ada8"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

@@ -1,0 +1,33 @@
+name: mob_kassa
+description: Mobil kassa - 1C:UNF 3.0 uchun kassir ilovasi
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  shared_preferences: ">=2.3.0 <2.4.0"
+  intl: ^0.19.0
+
+dependency_overrides:
+  shared_preferences_android: ">=2.3.0 <2.4.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#383B41"
+  adaptive_icon_foreground: "assets/icon/icon_adaptive.png"
+
+flutter:
+  uses-material-design: true
